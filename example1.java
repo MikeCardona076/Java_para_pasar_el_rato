@@ -5,7 +5,7 @@ public class example1 {
 	public static void main(String[] args) {
 		Scanner numero1 = new Scanner(System.in);
 		Scanner numero2 = new Scanner(System.in);
-		
+				
 		System.out.println("Ingresa una número ");
 		int ingreso1 = numero1.nextInt();
 		System.out.println("Ingresa otro número");
