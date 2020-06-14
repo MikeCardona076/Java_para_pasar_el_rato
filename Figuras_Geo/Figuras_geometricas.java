@@ -7,7 +7,9 @@ public class Figuras_geometricas {
     static int eleccion_2 =0; //Evalua el segundo menu mediante la respuesta de eleccion(Variable)
     static Scanner ingreso_2 = new Scanner(System.in);
     static Rectangulo Get_elemento_rectangulo = new Rectangulo();//Obtiene un metodo de la clase Rectangulo
-    static Cuadrado Get_elemento_cuadrado = new Cuadrado();
+    static Cuadrado Get_elemento_cuadrado = new Cuadrado();//Obtiene un metodo de la clase Cuadrado
+    static Triangulo Get_elemento_triangulo = new Triangulo(); //Obtiene un metodo de la clase Triangulo
+    static Circulo Get_elemento_circulo = new Circulo(); //Obtiene un metodo de la clase Circulo
 
     public static void main(String[] args) {
         menu();
@@ -23,6 +25,7 @@ public class Figuras_geometricas {
             if(eleccion !=5 ){
                 menu_secundario(eleccion);
             }
+            //Si es diferente a 5 termina el programa, mientras no lo sea, este nos llevara al segundo menu con la Figura que elegimos 
         }
         while(eleccion != 5);
         
@@ -36,28 +39,58 @@ public class Figuras_geometricas {
             switch(eleccion_2){
                 case 1:
                 //Area
-                if(eleccion == 1){
+                //Eleccion viene del primer menu, ya que este nos dice que figura escogimos 
+                if(eleccion == 1){ //Rectangulo
                     Get_elemento_rectangulo.Area_rectangulo(3, 4);
                 }
-                if(eleccion == 3){
+                if(eleccion == 2){//Triangulo
+                    Get_elemento_triangulo.Area_triangulo(4, 5);
+                }
+                if(eleccion == 3){//Cuadrado
                     Get_elemento_cuadrado.Area_cuadrado(4);
+                }
+                if(eleccion == 4){//Circulo
+                    Get_elemento_circulo.Area_circulo(2);
                 }
 
                 break;
                 //Perimetro
                 case 2:
-                if(eleccion == 1){
+                if(eleccion == 1){//Rectangulo
                     Get_elemento_rectangulo.Perimetro_rectangulo(3, 4);
                 }
-                if(eleccion == 3){
-                    Get_elemento_cuadrado.Perimetro_rectangulo(4);
+                if(eleccion == 2){//Triangulo
+                    Get_elemento_triangulo.Perimetro_triangulo();
+                }
+                if(eleccion == 3){//Cuadrado
+                    Get_elemento_cuadrado.Perimetro_cuadrado(4);
+                }
+                if(eleccion == 4){//Cuadrado
+                    Get_elemento_circulo.Perimetro_circulo(3);
                 }
                 break;
+
                 //Todo Falta de desarrollar
                 case 3:
                 if(eleccion == 1){
+                    //LLamada de toda la info Rectangulo
                     Get_elemento_rectangulo.Area_rectangulo(3, 4);
                     Get_elemento_rectangulo.Perimetro_rectangulo(3, 4);
+                }
+                if(eleccion == 2){
+                    //LLamada de toda la info Triangulo
+                    Get_elemento_triangulo.Area_triangulo(3, 3);
+                    Get_elemento_triangulo.Perimetro_triangulo();
+                }
+                if(eleccion == 3){
+                    //LLamada de toda la info Cuadrado
+                    Get_elemento_cuadrado.Area_cuadrado(4);;
+                    Get_elemento_cuadrado.Perimetro_cuadrado(4);
+                }
+                if(eleccion == 4){
+                    //LLamada de toda la info Circulo
+                    Get_elemento_circulo.Area_circulo(3);
+                    Get_elemento_circulo.Perimetro_circulo(4);
                 }
                 break;
             }
