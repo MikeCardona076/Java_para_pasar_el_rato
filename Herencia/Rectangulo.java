@@ -1,9 +1,12 @@
-package Figuras_Geo;
+package Herencia;
 public class Rectangulo {
-    public void Area_rectangulo(double base, double altura) {
-        System.out.println("Area del Rectangulo: " + base * altura);
+
+    public double Area_rectangulo(double base, double altura){
+        return base * altura;
 
     }
+
+    
     public void Perimetro_rectangulo(double base, double altura){
         System.out.println("Perimetro del Rectangulo: " + (2 * (base + altura)));
     }

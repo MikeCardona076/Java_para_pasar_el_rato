@@ -1,3 +1,4 @@
+package Ejercicios;
 import java.util.Scanner;
 public class programaciont {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-
+package Ejercicios;
 public class example11 {
     public static void main(String[] args) {
         int x = 0;

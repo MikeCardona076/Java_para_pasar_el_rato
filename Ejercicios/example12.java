@@ -1,3 +1,4 @@
+package Ejercicios;
 public class example12 {
     public static void main(String[] args) {
         int x = 5, producto = 10, cociente = 20;

@@ -1,3 +1,4 @@
+package Ejercicios;
 
 import java.util.Scanner;
 public class example1 {
@@ -10,7 +11,6 @@ public class example1 {
 		int ingreso1 = numero1.nextInt();
 		System.out.println("Ingresa otro número");
 		int ingreso2 = numero2.nextInt();
-		 
 		if(ingreso1 == ingreso2) {
 			System.out.println("Los números son iguales apa");
 		}
