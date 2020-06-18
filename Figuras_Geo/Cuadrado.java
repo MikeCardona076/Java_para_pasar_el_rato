@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Cuadrado {
     //..........................................................
     //Variables
-    static int lado =0;
+    private int lado =0;
     //..........................................................
 
     //..........................................................
@@ -13,22 +13,22 @@ public class Cuadrado {
     //..........................................................
 
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    public int Ingreso(){
+    public int Get_Ingreso(){
         System.out.println("Ingresa lado o radio: ");
-        int lado = ingreso.nextInt();
+        lado = ingreso.nextInt();
         return lado;
             
     }
 
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     public void Area_cuadrado(){
-        System.out.println("Area del cuadrado: " + Ingreso() * Ingreso());
+        System.out.println("Area del cuadrado: " + Get_Ingreso() * Get_Ingreso());
 
     }
 
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    public void Perimetro_cuadrado(){
-        System.out.println("Perimetro del cuadrado: " + Ingreso() * 4);
+    public void Perimetro_cuadrado() {
+        System.out.println("Perimetro del cuadrado: " + Get_Ingreso() * 4);
     }
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     

@@ -64,7 +64,8 @@ public class Figuras_geometricas {
                 //La eleccion viene del primer menu, ya que este nos dice que figura escogimos 
                 if(eleccion_uno == 1){ //Rectangulo
                     Ingresos();
-                    Get_elemento_rectangulo.Area_rectangulo(base, altura);
+                    Get_elemento_rectangulo.Set_Area_rectangulo(base, altura);
+                    Get_elemento_rectangulo.Get_Area_rectangulo();
                 }
                 if(eleccion_uno == 2){//Triangulo
                     Ingresos();
@@ -86,7 +87,8 @@ public class Figuras_geometricas {
                 case 2:
                 if(eleccion_uno == 1){//Rectangulo
                     Ingresos();
-                    Get_elemento_rectangulo.Perimetro_rectangulo(base, altura);
+                    Get_elemento_rectangulo.Set_Perimetro_rectangulo(base, altura);
+                    Get_elemento_rectangulo.Get_Perimetro_rectangulo();
                 }
                 if(eleccion_uno == 2){//Triangulo
                     Get_elemento_triangulo.Perimetro_triangulo();
@@ -106,8 +108,8 @@ public class Figuras_geometricas {
                 case 3:
                 if(eleccion_uno == 1){
                     //LLamada de toda la info Rectangulo
-                    Get_elemento_rectangulo.Area_rectangulo(base, altura);
-                    Get_elemento_rectangulo.Perimetro_rectangulo(base, altura);
+                    Get_elemento_rectangulo.Set_Area_rectangulo(base, altura);
+                    Get_elemento_rectangulo.Get_Perimetro_rectangulo();
                 }
                 if(eleccion_uno == 2){
                     //LLamada de toda la info Triangulo
