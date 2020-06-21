@@ -65,56 +65,56 @@ public class Figuras_geometricas {
                 if(eleccion_uno == 1){ //Rectangulo
                     Ingresos();
                     Get_elemento_rectangulo.Set_Area_rectangulo(base, altura);
-                    Get_elemento_rectangulo.Get_Area_rectangulo();
+                    System.out.println("Area: "+Get_elemento_rectangulo.Get_Area_rectangulo());
                 }
                 if(eleccion_uno == 2){//Triangulo
                     Ingresos();
-                    Get_elemento_triangulo.Area_triangulo(base, altura);
+                    Get_elemento_triangulo.Set_Area_triangulo(base, altura);
+                    System.out.println("Area: "+Get_elemento_triangulo.Get_Area_triangulo());
+
                 }
-                if(eleccion_uno == 3){//Cuadrado
+                if (eleccion_uno == 3) {// Cuadrado
                     Get_elemento_cuadrado.Area_cuadrado();
                 }
-                if(eleccion_uno == 4){//Circulo
+                if (eleccion_uno == 4) {// Circulo
                     Get_elemento_circulo.Area_circulo();
                 }
                 break;
-                //..........................................................
+            // ..........................................................
 
-
-
-                //..........................................................
-                //Perimetro
-                case 2:
-                if(eleccion_uno == 1){//Rectangulo
+            // ..........................................................
+            // Perimetro
+            case 2:
+                if (eleccion_uno == 1) {// Rectangulo
                     Ingresos();
                     Get_elemento_rectangulo.Set_Perimetro_rectangulo(base, altura);
-                    Get_elemento_rectangulo.Get_Perimetro_rectangulo();
+                    System.out.println("Perimetro: " + Get_elemento_rectangulo.Get_Perimetro_rectangulo());
                 }
-                if(eleccion_uno == 2){//Triangulo
-                    Get_elemento_triangulo.Perimetro_triangulo();
+                if (eleccion_uno == 2) {// Triangulo
+                    Get_elemento_triangulo.Set_Perimetro_triangulo();
+                    System.out.println("Perimetro: " +Get_elemento_triangulo.Get_Perimetro_triangulo());
                 }
-                if(eleccion_uno == 3){//Cuadrado
+                if (eleccion_uno == 3) {// Cuadrado
                     Get_elemento_cuadrado.Perimetro_cuadrado();
                 }
-                if(eleccion_uno == 4){//Cuadrado
+                if (eleccion_uno == 4) {// Cuadrado
                     Get_elemento_circulo.Perimetro_circulo();
                 }
                 break;
-                //..........................................................
+            // ..........................................................
 
-
-                //..........................................................
-                //Toda la info de Area y Perimetro
-                case 3:
-                if(eleccion_uno == 1){
-                    //LLamada de toda la info Rectangulo
-                    Get_elemento_rectangulo.Set_Area_rectangulo(base, altura);
-                    Get_elemento_rectangulo.Get_Perimetro_rectangulo();
+            // ..........................................................
+            // Toda la info de Area y Perimetro
+            case 3:
+                if (eleccion_uno == 1) {
+                    // LLamada de toda la info Rectangulo
+                    System.out.println("Area: "+Get_elemento_rectangulo.Get_Area_rectangulo());
+                    System.out.println("Perimetro: " + Get_elemento_rectangulo.Get_Perimetro_rectangulo());
                 }
-                if(eleccion_uno == 2){
-                    //LLamada de toda la info Triangulo
-                    Get_elemento_triangulo.Area_triangulo(base, altura);
-                    Get_elemento_triangulo.Perimetro_triangulo();
+                if (eleccion_uno == 2) {
+                    // LLamada de toda la info Triangulo
+                    System.out.println("Area: "+Get_elemento_triangulo.Get_Area_triangulo());
+                    System.out.println("Perimetro: " +Get_elemento_triangulo.Get_Perimetro_triangulo());
                 }
                 if(eleccion_uno == 3){
                     //LLamada de toda la info Cuadrado

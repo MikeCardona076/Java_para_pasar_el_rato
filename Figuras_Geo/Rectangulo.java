@@ -9,7 +9,7 @@ public class Rectangulo {
     }
 
     public int Get_Area_rectangulo(){
-        return this.area; 
+        return area; 
 
     }
 
