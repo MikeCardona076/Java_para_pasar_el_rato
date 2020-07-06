@@ -1,7 +1,7 @@
 package Figuras_Geo;
 public class Rectangulo {
 
-    private int area, perimetro;
+    private int area, perimetro; //  
     
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     public void Set_Area_rectangulo(int base, int altura) {
